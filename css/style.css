@@ -1,0 +1,152 @@
+body {
+  background-color: #e5e5e5;
+  font-family: "Alata", sans-serif;
+  color: white;
+}
+
+/* todolist */
+ul {
+  max-height: 121px;
+  right: 0;
+  list-style: none;
+  padding: 0;
+  margin: 4px auto;
+  border-top: 1px solid #bdc3c7;
+  text-align: right;
+  overflow-y: auto;
+}
+li {
+  padding: 4px;
+  color: white;
+}
+
+/* todolist delete button */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+  color: red;
+}
+
+/* inner box */
+.inner {
+  width: 480px;
+  max-height: 410px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -130px;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* clock */
+.js-clock-title {
+  font-size: 72px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* input form */
+input {
+  background: none;
+  border: none;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+input:focus {
+  border-color: #51a7e8;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 5px rgba(81, 167, 232, 0.5);
+}
+input::-webkit-input-placeholder {
+  color: white;
+}
+input::-ms-input-placeholder {
+  color: white;
+}
+input::-moz-input-placeholder {
+  color: white;
+}
+input:hover::-webkit-input-placeholder {
+  color: #4682b4;
+}
+input:hover::-ms-input-placeholder:hover {
+  color: #4682b4;
+}
+input:hover::-moz-input-placeholder:hover {
+  color: #4682b4;
+}
+
+/* ul 스크롤바 */
+ul::-webkit-scrollbar {
+  width: 16px;
+}
+ul::-webkit-scrollbar-track {
+  background-color: none;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+ul::-webkit-scrollbar-thumb:hover {
+  background: #4682b4;
+}
+ul::-webkit-scrollbar-button:start:decrement,
+ul::-webkit-scrollbar-button:end:increment {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* weather */
+.js-weather {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+}
+
+/* 입력이벤트 실행시 나타나고사라지는 */
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+  color: white;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/* bgimage 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* bgimage */
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  animation: fadeIn 0.2s linear;
+}
